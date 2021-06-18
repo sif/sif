@@ -1,6 +1,6 @@
-### Hi there, I'm Sifer 👋
+### Hi there, I'm Sif 👋
 
-- 🔭 I’m currently working on my Privacy Tracker
-- 🌱 I’m currently learning more algorithms and data structures
+- 🔭 I’m currently looking for a new Python role
+- 🌱 I’m currently researching IoT hacks
 - 👯 I’m looking to collaborate on new projects
 - 🤔 I’m looking for help with my Privacy Tracker
