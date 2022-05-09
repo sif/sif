@@ -3,7 +3,7 @@
 I'm currently:
 - 🔭 looking for a new SWE role
 - 👯 working on Ghost Artemis
-- 🌱 forever learning
+- 🌱 new hobby currently include learning game dev: Modding, Kivy, pygame, Unreal, Unity
 
 Feel free to reach out to me if you need a new member for contests.
 - <a href="https://metactf.com">MetaCTF</a> (Top 40)
