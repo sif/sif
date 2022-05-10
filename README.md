@@ -20,13 +20,9 @@ A little more about me:
 
 <img src="https://github.com/sif/sif/blob/main/pexels-photo-1440387.jpeg" width="50" height="50" /> Not enough hours in a day.
 
-#### Fragment Map
-
 | Location         | Description                                                                          |
 |:----------------:|:------------------------------------------------------------------------------------:|
-| [sifercontest](https://github.com/sif/Personal/tree/master/0.sifercontest)   | My competition code  |
 | [sifer--](https://github.com/sif/Personal/tree/master/1.sifer--)             | C++ snippets         |
 | [pysifer](https://github.com/sif/Personal/tree/master/2.pysifer)             | Python snippets      |
 | [secsif](https://github.com/sif/Personal/tree/master/3.secsif)               | Security stuff       |
 | [ferfer](https://github.com/sif/Personal/tree/master/4.ferfer)               | Web                  |
-| [othersifer](https://github.com/sif/Personal/tree/master/5.othersifer)       | Miscellaneous        |
