@@ -24,9 +24,9 @@ A little more about me:
 
 | Location         | Description                                                                          |
 |:----------------:|:------------------------------------------------------------------------------------:|
-| [sifercontest](https://github.com/sif/Personal/tree/master/2.sifercontest)   | My competition code  |
-| [sifer--](https://github.com/sif/Personal/tree/master/0.sifer--)             | C++ snippets         |
-| [pysifer](https://github.com/sif/Personal/tree/master/1.pysifer)             | Python snippets      |
-| [secsif](https://github.com/sif/Personal/tree/master/5.secsif)               | Security stuff       |
-| [ferfer](https://github.com/sif/Personal/tree/master/3.ferfer)               | Web                  |
-| [othersifer](https://github.com/sif/Personal/tree/master/4.othersifer)       | Miscellaneous        |
+| [sifercontest](https://github.com/sif/Personal/tree/master/0.sifercontest)   | My competition code  |
+| [sifer--](https://github.com/sif/Personal/tree/master/1.sifer--)             | C++ snippets         |
+| [pysifer](https://github.com/sif/Personal/tree/master/2.pysifer)             | Python snippets      |
+| [secsif](https://github.com/sif/Personal/tree/master/3.secsif)               | Security stuff       |
+| [ferfer](https://github.com/sif/Personal/tree/master/4.ferfer)               | Web                  |
+| [othersifer](https://github.com/sif/Personal/tree/master/5.othersifer)       | Miscellaneous        |
