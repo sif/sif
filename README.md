@@ -1,4 +1,4 @@
-### Hello, I'm Sif 👋
+## Hello, I'm Sif 👋
 
 I'm currently:
 - 🔭 looking for a new SWE role
@@ -15,3 +15,18 @@ A little more about me:
 - One of my lifelong interest is life longevity.
 
 <table><tbody><tr><td><a href="https://octo-ring.com/"><img src="https://octo-ring.com/static/img/widget/top.png" width="99%" alt="Octo Ring logo" align="top"></a><br><a href="https://octo-ring.com/p/sif/prev"><img src="https://octo-ring.com/static/img/widget/prev.png" width="33%" alt="previous" align="top" title="previous profile"></a><a href="https://octo-ring.com/p/sif/random"><img src="https://octo-ring.com/static/img/widget/random.png" width="33%" alt="random" align="top" title="random profile"></a><a href="https://octo-ring.com/p/sif/next"><img src="https://octo-ring.com/static/img/widget/next.png" width="33%" alt="next" align="top" title="next profile"></a><br><a href="https://octo-ring.com/"><img src="https://octo-ring.com/static/img/widget/bottom.png" width="99%" alt="check out other GitHub profiles in the Octo Ring" align="top"></a></td></tr></tbody></table>
+
+[Back](http://www.siferaseph.com)
+
+<img src="https://github.com/sif/Personal/blob/master/5.othersifer/pexels-photo-1440387.jpeg" width="50" height="50" /> Not enough hours in a day.
+
+#### Fragment Map
+
+| Location         | Description                                                                          |
+|:----------------:|:------------------------------------------------------------------------------------:|
+| [sifercontest](https://github.com/cassandriel/Personal/tree/master/2.sifercontest)   | My competition code  |
+| [sifer--](https://github.com/cassandriel/Personal/tree/master/0.sifer--)             | C++ snippets         |
+| [pysifer](https://github.com/cassandriel/Personal/tree/master/1.pysifer)             | Python snippets      |
+| [secsif](https://github.com/cassandriel/Personal/tree/master/5.secsif)               | Security stuff       |
+| [ferfer](https://github.com/cassandriel/Personal/tree/master/3.ferfer)               | Web                  |
+| [othersifer](https://github.com/cassandriel/Personal/tree/master/4.othersifer)       | Miscellaneous        |
