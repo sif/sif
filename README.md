@@ -18,7 +18,7 @@ A little more about me:
 
 [Back](http://www.siferaseph.com)
 
-<img src="https://github.com/sif/Personal/blob/master/5.othersifer/pexels-photo-1440387.jpeg" width="50" height="50" /> Not enough hours in a day.
+<img src="https://github.com/sif/sif/blob/main/pexels-photo-1440387.jpeg" width="50" height="50" /> Not enough hours in a day.
 
 #### Fragment Map
 
