@@ -1,0 +1,82 @@
+---
+layout: post
+title: "Forgerock"
+categories: cybersecurity
+tags: cybersecurity
+---
+
+* TOC
+{:toc}
+
+bought out by Ping so if I ever get the time, I will need to transform this note
+
+IAM, IGA, Passwordless CIAM, Workforce
+
+Mule API Gateway
+
+
+
+Identity Platform
+
+ForgeRock Identity Platform offers access management, identity management, user-managed access, directory service, and an identity gateway
+
+
+
+connector is a connection to external resources such as data store
+
+
+
+nppi - non-public personal information
+
+
+
+CIAM
+
+
+
+## IDM (Identity Management)
+
+what we see first
+
+  - manages the lifecycle of identity
+  - lets you provision and synchronize data
+
+
+
+## AM (Access Management)
+
+what customers see first
+
+  - federation
+  - create realm, set policies, user stores, etc.
+  - create a flow with authentication trees
+
+depending on how the organization deploys FR, if I am asked to federate with FR, I need to make it public
+
+
+
+## DJ (or DS, Directory Service)
+
+
+
+## IGW (Identity Gateway)
+
+Identity Gateway helps enable federation for applications that do not support SAML 2.0
+
+
+
+## CTS (Core Token Service)
+
+tokens stored inside LDAP, controlled by CTS
+
+
+
+## Older Versions
+
+will need custom run Java web app via class
+
+
+
+create the said Java app, package the class as JAR, load the JAR file into a certain directory, drop the WAR (Web Application Archive) into Tomcat
+
+
