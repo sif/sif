@@ -33,6 +33,13 @@ Types of social engineers/insider threats:
 
 
 
+pig butchering, romance scam, involves gaining trust
+advanced tactics include mock group chats 
+
+FBI says in 2022, Americans lost $22 billion to this scam (and others like this)
+
+
+
 "On a basic level, responding to a spam text confirms your number is active and engaged."
 https://lifehacker.com/your-joke-texts-with-scammers-will-backfire-1849178959
 
@@ -68,6 +75,8 @@ https://lifehacker.com/your-joke-texts-with-scammers-will-backfire-1849178959
 
 
 ### Phishing
+
+FTC warns about QR code scam (such as those seen on parking meters in Texas)
 
 a recent social engineering campaign in 2023 has targeted high profile facebook pages, hijacking them to distribute spam
 page administrators were lured by phishing schemes over zoom which lead them to surrender their page access unknowingly

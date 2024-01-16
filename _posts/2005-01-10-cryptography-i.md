@@ -139,6 +139,10 @@ dapp, decentralized app
 
 Think of blockchains as a ledger or record book
 
+A proof of ledger even
+
+So BTC would be proof of payment
+
 
 
 ### Cryptocurrency
@@ -183,11 +187,15 @@ Ethereum 2.0 was built to reduce energy consumption and increase transaction spe
 - Cardano (ADA)
 - Dogecoin (DOGE)
 
+Polygon can compete and complement Ethereum
+
 
 
 ### NFT
 
 ["People Are Spending Millions of Dollars on Loot for Games That Don't Exist"](https://www.vice.com/en/article/akgp8e/people-are-spending-millions-of-dollars-on-loot-for-games-that-dont-exist)
+
+NFT is just a digital asset
 
 
 
@@ -216,6 +224,10 @@ physical asset oracle problem / blockchain oracle problem
 
 
 ### Wallets
+
+MetaMask
+
+good for ETH
 
 
 

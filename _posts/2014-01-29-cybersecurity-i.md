@@ -67,6 +67,10 @@ https://en.wikipedia.org/wiki/The_Shadow_Brokers
 Ransomware group
 BlackCat/ALPHV
 
+Clop
+
+Storm Cloud 0539, gift card fraud, AiTM (adversary-in-the-middle) phishing pages which harvests credentials and session tokens, spear-phishing 
+
 
 
 ## Problems and Problem Statement

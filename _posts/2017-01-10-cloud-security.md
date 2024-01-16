@@ -21,6 +21,10 @@ telemetry
 
 
 
+Cloud Native Application Protection Platform (CNAPP)
+
+
+
 ## Splunk
 
 "A Splunk index is a repository for Splunk data."
@@ -44,6 +48,8 @@ can create search alerts
 
 
 ### OpenTelemetry
+
+otel x-ray
 
 
 
