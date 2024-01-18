@@ -137,6 +137,13 @@ dapp, decentralized app
 
 ## Blockchain
 
+https://etherscan.io
+https://goerli.etherscan.io
+
+https://polygonscan.com
+
+OpenZeppelin
+
 Think of blockchains as a ledger or record book
 
 A proof of ledger even
@@ -178,6 +185,10 @@ focuses on smart contracts
 
 Ethereum 2.0 was built to reduce energy consumption and increase transaction speed
 
+Ether.js
+
+Hardhat, development environment, deployment tool
+
 
 
 #### Others
@@ -186,6 +197,7 @@ Ethereum 2.0 was built to reduce energy consumption and increase transaction spe
 - Ripple (XRP)
 - Cardano (ADA)
 - Dogecoin (DOGE)
+- USD Coin (USDC), stablecoin, always worth $1
 
 Polygon can compete and complement Ethereum
 
@@ -194,6 +206,10 @@ Polygon can compete and complement Ethereum
 ### NFT
 
 ["People Are Spending Millions of Dollars on Loot for Games That Don't Exist"](https://www.vice.com/en/article/akgp8e/people-are-spending-millions-of-dollars-on-loot-for-games-that-dont-exist)
+
+https://mintofdestiny.xyz
+
+OpenSea
 
 NFT is just a digital asset
 
