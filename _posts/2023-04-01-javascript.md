@@ -16,7 +16,7 @@ works on media like images, videos, audio, canvas
 
 Manipulating CSS
 
-
+<img src="https://github.com/sif/sif/raw/main/files/post_files/tictactoe.png" />
 
 ### Variables & Data Types
 
