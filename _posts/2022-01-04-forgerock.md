@@ -43,6 +43,10 @@ what we see first
 
 
 
+IDM 7.4
+
+
+
 ## AM (Access Management)
 
 what customers see first
@@ -52,6 +56,10 @@ what customers see first
   - create a flow with authentication trees
 
 depending on how the organization deploys FR, if I am asked to federate with FR, I need to make it public
+
+
+
+AM 7.4
 
 
 
