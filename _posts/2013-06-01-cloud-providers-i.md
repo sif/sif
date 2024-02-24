@@ -78,6 +78,10 @@ Microsoft Defender for Cloud
 
 
 
+GoldenGate
+
+
+
 ## Infrastructure as Code
 
 IaC

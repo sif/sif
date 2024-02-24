@@ -20,6 +20,10 @@ tags: cybersecurity crypto
 
 ## Hash
 
+No hashing algorithm can guarantee absolute collision avoidance due to Pigeonhole Principle
+
+Avalanche effect
+
 - SHA-256 (Secure Hashing Algorithm) 
 - MD5 128 bit hash, expressed as 32 bit hex
 - SHA1
@@ -135,12 +139,14 @@ dapp, decentralized app
 
 
 
+https://www.blockaid.io
+
+
+
 ## Blockchain
 
 https://etherscan.io
 https://goerli.etherscan.io
-
-https://polygonscan.com
 
 OpenZeppelin
 
@@ -148,7 +154,11 @@ Think of blockchains as a ledger or record book
 
 A proof of ledger even
 
+Immutable ledger
+
 So BTC would be proof of payment
+
+Distributed P2P network
 
 
 
@@ -191,6 +201,16 @@ Hardhat, development environment, deployment tool
 
 
 
+#### Polygon / Matic Network
+
+https://polygonscan.com
+
+MATIC
+
+Finality variant ensures that once a transaction is confirmed, it cannot be altered or reversed
+
+
+
 #### Others
 
 - Solana (SOL)
@@ -212,6 +232,8 @@ https://mintofdestiny.xyz
 OpenSea
 
 NFT is just a digital asset
+
+NFTs are unique and not interchangeable
 
 
 
@@ -235,7 +257,15 @@ physical asset oracle problem / blockchain oracle problem
 
 
 
+### Fungible
+
+Fungible tokens are identical and interchangeable
+
+
+
 ### Mining
+
+Nonce
 
 
 
@@ -258,5 +288,9 @@ known plain-text: search plaintext for repeatable sequences, compare to t versio
 ciphertext-only: obtain several messages with same algorithms, analyze to reveal repeating code
 
 replay: performed in mitm, repeat exchange to fool system in setting up communication channel
+
+
+
+harvest now, decrypt later
 
 

@@ -89,6 +89,10 @@ CDD, customer due diligence
 SAR, suspicious activity report
 High-risk jurisdiction
 
+Generative AI may make KYC useless
+
+It could even beat liveness checks
+
 
 
 ## Electronic Intelligence

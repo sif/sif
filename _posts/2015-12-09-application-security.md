@@ -12,6 +12,8 @@ DAST
 
 SAST
 
+Semgrep
+
 Application Security Posture Management (ASPM)
 prioritizing application risk
 AppSec control plane

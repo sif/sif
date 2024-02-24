@@ -389,6 +389,10 @@ Athena – analytics with SQL
 
 ## Networking
 
+AWS will start charging $4/month for IPv4 addresses
+
+Biggest challenge in adopting IPv6 is ISP support and support for developer tools
+
 
 
 ### Virtual Private Cloud (VPC)
