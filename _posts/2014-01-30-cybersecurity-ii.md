@@ -10,12 +10,6 @@ tags: cybersecurity ZT
 
 
 
-software supply chain
-
-PackagingCon
-
-
-
 chainguard
 
 
@@ -31,5 +25,17 @@ Zero trust security model
 Whonix (disable Blur & Translucency; enable Resize Windows for VirtualBox)
 
 Tails
+
+
+
+## Software Supply Chain
+
+
+
+PackagingCon
+
+
+
+Software Composition Analysis (SCA)
 
 
