@@ -197,6 +197,8 @@ https://en.wikipedia.org/wiki/Stuxnet
 
 ### Ransomware
 
+Ransomware groups loves small businesses 
+
 
 
 ### Bots, Botnets

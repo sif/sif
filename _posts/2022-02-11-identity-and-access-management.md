@@ -131,6 +131,8 @@ Thales
 
 Ilantus
 
+NetIQ
+
 ### SiteMinder
 
 "SiteMinder is a software product that is used to manage and secure access to web applications and resources. The SiteMinder proxy is a component of the SiteMinder system that acts as a mediator between a client and a server, forwarding requests from clients to servers and returning responses from servers to clients. The proxy is typically used to provide an additional layer of security and to enable the SiteMinder system to perform various tasks such as authenticating users, enforcing access controls, and logging activity. The SiteMinder proxy can be configured to work with various types of web servers and applications, and is often used in enterprise environments to manage access to corporate resources."
