@@ -160,17 +160,27 @@ So BTC would be proof of payment
 
 Distributed P2P network
 
+Byzantine Fault Tolerance
+
+consensus protocol
+
+orphaned blocks
+
 
 
 ### Cryptocurrency
 
-To mine, you need: hardware, software, wallet (hardware or software)
+Ecosystem includes: nodes, miners, mines, mining pools
+
+proof-of-work (POW), used by BTC
+
+proof-of-stake (POS), used by ETH (or currently at POW and plans to move to POS)
+
+
 
 field programmable gate arrays (FPGAs)
 
-application-specific integrated circuit (ASIC)
-
-
+ICO initial coin offering
 
 - Bitcoin can process about 7 tps (transaction per second)
 - Ethereum can process aorund 15-30 tps
@@ -185,7 +195,11 @@ So scalability is an issue
 
 first cryptocurrency
 
+invented by Satoshi Nakamoto, released in around 2008
+
 limited supply of 21 million coins
+
+Bitcoin's Monetary Policy - halving, block frequency 
 
 
 
@@ -265,7 +279,19 @@ Fungible tokens are identical and interchangeable
 
 ### Mining
 
+To mine, you need: hardware, software, wallet (hardware or software)
+
+CPUs vs GPUs vs ASICs (application-specific integrated circuit)
+
 Nonce
+
+Golden nonce
+
+Nonce range
+
+Picking transactions
+
+Mempools
 
 
 
@@ -288,6 +314,10 @@ known plain-text: search plaintext for repeatable sequences, compare to t versio
 ciphertext-only: obtain several messages with same algorithms, analyze to reveal repeating code
 
 replay: performed in mitm, repeat exchange to fool system in setting up communication channel
+
+
+
+51% attack
 
 
 
