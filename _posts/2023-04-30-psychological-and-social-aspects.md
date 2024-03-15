@@ -24,7 +24,9 @@ spoon theory
 
 ## Strategies for coping and adapting to sensory impairments
 
-
+https://www.handspeak.com
+https://www.lifeprint.com
+https://www.youtube.com/@sign-language
 
 Sign Language
 

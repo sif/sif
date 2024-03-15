@@ -22,6 +22,10 @@ Open-source stack which consists of Elasticsearch, Logstash and Kibana
 
 
 
+Tableau
+
+
+
 - Analyze the data to provide business teams with data-driven insights
 - Validate or invalidate experiments via data analysis
 - Attempts to glean useful info (data driven insights, often to do things like increase sales or optimize drug dosage)

@@ -186,6 +186,18 @@ claims to implement RBAC and ABAC
 
 
 
+## LDAP
+
+dn = distinguished name
+
+cn = common name
+
+ou = organizational unit
+
+sn = surname
+
+
+
 ## Digital Certificates
 
 

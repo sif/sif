@@ -243,6 +243,8 @@ Polygon can compete and complement Ethereum
 
 https://mintofdestiny.xyz
 
+721
+
 OpenSea
 
 NFT is just a digital asset
@@ -272,6 +274,8 @@ physical asset oracle problem / blockchain oracle problem
 
 
 ### Fungible
+
+20
 
 Fungible tokens are identical and interchangeable
 
