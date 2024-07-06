@@ -67,6 +67,10 @@ Starcraft 2
 
 ## MMO
 
+04/07/2021
+"Agony of a Dying MMO - A Haunting Horror Game Set in a Doomed MMO That's About to Be Shut Down!"
+https://www.youtube.com/watch?v=lTTOZZb1pJY
+
 ### World of Warcraft (WoW)
 
 Previous main: mage, shaman, death knight
