@@ -59,11 +59,17 @@ Starcraft 2
 
 ### Tabletop Simulator (10 max)
 
+
+
 ### Starcraft 2
 
 ### No Man's Sky
 
 ### Fallout 76 (24 but expandable for friends)
+
+  - Vault Atrium Shelter is my personal home
+  - Nuclear Missile Silo Shelter is for public
+  - Vault Utility Room Shelter is garage
 
 ## MMO
 
@@ -76,6 +82,18 @@ https://www.youtube.com/watch?v=lTTOZZb1pJY
 Previous main: mage, shaman, death knight
 
 Current main: TBD
+
+### Guild Wars
+
+To install, merely do this: `wine GwSetup.exe`
+
+Suggested setting:
+
+  - Allow Pixel Shader
+  - Set Vertex Shader Support to Hardware
+  - Do not allow window manager to control the window (this prevent common desktop hotkey to activate during gameplay such as switch desktop)
+
+### Guild Wars 2
 
 
 
@@ -103,6 +121,16 @@ Wave 230
 #### Warcraft Rumble
 
 Level 19 Collection
+
+#### Blood Brothers
+
+#### Dragon Blaze
+
+Apparently ASTRA: Knights of Veda is the spiritual successor
+
+#### Destiny Child
+
+#### Soul Ark
 
 ## To categorize later
 
