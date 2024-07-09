@@ -8,6 +8,8 @@ tags: science soft_science
 * TOC
 {:toc}
 
+["Is Education Becoming Too Woke?"](https://www.youtube.com/shorts/zDW56uBIPjg)
+
 Unus mundus
 
 "every accusation is a confession"
