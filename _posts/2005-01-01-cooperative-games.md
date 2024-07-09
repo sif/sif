@@ -12,6 +12,8 @@ tags: games
 
 I have Origin, Steam, Battle.net, etc. Feel free to reach out to me if you want to connect.
 
+For the record, I believe games should be eligible for Pulitzer Prize.
+
 ## Current
 
 
