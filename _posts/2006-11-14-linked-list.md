@@ -65,3 +65,15 @@ A circular linked list is a linked list whose tail (last node) references the he
 ### Circular Singly Linked List
 
 
+
+## Exercises
+
+- Implement a linked list (with insert and delete functions).
+- Find the nth element in a linked list.
+- Remove the nth element of a linked list.
+- Check if a linked list has cycles.
+- Given a circular linked list, find the node at the beginning of the loop. For example: A-B-C-D-E-C, C is the node that begins the loop.
+- Check whether a link list is a palindrome.
+- Reverse a linked list iteratively and recursively.
+
+

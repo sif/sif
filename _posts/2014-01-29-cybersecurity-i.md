@@ -33,6 +33,9 @@ I might merge this portion with psychology as a big part of this has to do with 
 "How To Become A Hacker by Eric Steven Raymond"
 http://www.catb.org/~esr/faqs/hacker-howto.html
 
+"Among Cybersecurity Pros, Security Paranoia Runs Deep"
+https://securityboulevard.com/2019/04/cybersecurity-pros-dont-trust-security/
+
 If you don't trust companies, you should trust third parties even less.
 
 It makes no sense to me why people buy, say, Google phones, then say they don’t trust Google so they install some random third party operating system.
