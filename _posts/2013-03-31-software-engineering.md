@@ -18,7 +18,13 @@ https://github.com/sindresorhus/awesome
 
 https://learnxinyminutes.com
 
-
+Titles
+  - Senior Engineer
+  - Staff Engineer
+  - Senior Staff Engineer
+  - Principal Engineer
+  - Distinguished Engineer
+  - Fellow
 
 Creating apps
   - Know how to use your IDE (Xcode)
