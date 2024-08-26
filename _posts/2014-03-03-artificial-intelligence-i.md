@@ -15,7 +15,24 @@ tags: AI ML GAN
 
 https://github.com/terryum/awesome-deep-learning-papers
 
+narrow AI, what we currently have altogether as of 2024
 
+categories based on human interactions
+
+- assisted intelligence AI, such as speech recognition
+- augmented intelligence, such as Siri and Alexa
+- autonomous intelligence AI, such as self-driving cars
+
+categories based on function
+
+- reactive AI, such as games
+- limited memory AI, such as self-driving cars
+
+generative AI is an augmented intelligence, limited-memory AI that uses deep learning by utilizing LLMs
+
+strong AI, includes theory of mind AI (some progress on this) and self-aware AI (purely speculative)
+
+issues/problems: accuracy, specifically: bias, hallucinations, false facts
 
 Get useful / meaningful data.
 

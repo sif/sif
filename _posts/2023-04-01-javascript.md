@@ -12,6 +12,8 @@ Bookmark: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-stru
 
 https://lp.jetbrains.com/academy/learn-javascript/
 
+https://natureofcode.com
+
 "ES6 stands for ECMAScript 6. ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it was published in 2015, and is also known as ECMAScript 2015."
 
 ## Basics
