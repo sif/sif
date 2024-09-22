@@ -10,6 +10,8 @@ tags: science soft_science
 
 ["Is Education Becoming Too Woke?"](https://www.youtube.com/shorts/zDW56uBIPjg)
 
+["The Surgery That Proved There Is No Free Will"](https://www.youtube.com/watch?v=_TYuTid9a6k)
+
 Unus mundus
 
 "every accusation is a confession"

@@ -441,7 +441,7 @@ Security groups
 
 Development/Deployment
 
-CodeCommit
+CodeCommit (deprecated)
 
 CodeDeploy
 

@@ -16,6 +16,10 @@ Amara’s law
 
 
 
+dxdiag
+
+
+
 ## Old Wishlist (don't buy)
 
 - [Thermaltake Level 10 VL30001N1Z](http://www.newegg.com/Product/Product.aspx?Item=N82E16811133089)
