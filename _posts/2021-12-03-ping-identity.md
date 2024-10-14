@@ -93,6 +93,7 @@ DaVinci Workflows for iOS and Android devices
 PingOne Authorize
 
 PingAuthorize
+fine grain access decision 
 
 PingAccess
 

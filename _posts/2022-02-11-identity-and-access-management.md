@@ -184,6 +184,31 @@ claims to implement RBAC and ABAC
 
 Identity Management Suite 10.10.11143
 
+AIMS (Avatier Identity Management Suite)
+
+An environment I've worked in involved connecting Avatier to AD
+It had a 1:1 relationship between privileges (Avatier) and groups (AD)
+
+Identity Anywhere
+
+They now use JavaScript, moved away from ASPX.
+
+Stateless
+
+
+
+#### Avatier in Cloud
+
+If cloud, you'll have your own instance
+
+customers can pay to be segregated, to have own container, orchestration
+
+Avatier also have own VPCs for smaller customers
+
+Every customers have their own VPCs but smaller ones share
+
+If they want their own cluster, they'll have to pay
+
 
 
 ### [Ping Identity](https://www.afterlifesong.com/cybersecurity/2021/12/03/ping-identity.html)
