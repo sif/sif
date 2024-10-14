@@ -211,6 +211,21 @@ If they want their own cluster, they'll have to pay
 
 
 
+### Silverfort
+
+Analyzes auth events and looks for abnormal service behavior
+
+See "Notify on NTLMv1" in Log section
+
+Currently does not detect weak passwords (2024)
+
+PrintNightmare filter not on dashboard yet (2024) but can be done with APIs/webhooks
+
+Does not have policies in JSON format 
+
+
+
+
 ### [Ping Identity](https://www.afterlifesong.com/cybersecurity/2021/12/03/ping-identity.html)
 
 ### [PlainID](https://www.afterlifesong.com/cybersecurity/2023/06/20/plainid.html)
