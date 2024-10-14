@@ -10,6 +10,11 @@ tags: cybersecurity security_architecture mfa
 
 
 
+YubiKey
+firmware cannot be updated
+
+
+
 OTP, one-time password, often used in MFA
 
 Implement MFA

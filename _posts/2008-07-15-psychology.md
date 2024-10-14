@@ -151,6 +151,8 @@ https://blogs.scientificamerican.com/observations/could-multiple-personality-dis
 "Can You Cure Mental Illness? Two Centuries of Trying Says No."
 https://www.theatlantic.com/books/archive/2022/07/-desperate-remedies-book-review-mental-illness-cure/670480/
 
+apparently your personality can change when you use a different language
+
 hypochondria
 
 ["I Prided Myself In It Until I Asked Myself Why": People Are Sharing Subtle Behaviors They Later Realized Were A Result Of Personal Trauma](https://www.buzzfeed.com/victoriavouloumanos/regular-behaviors-that-are-trauma-responses)
