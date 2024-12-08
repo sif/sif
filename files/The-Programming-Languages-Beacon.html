@@ -1,0 +1,2059 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>The Programming Languages Beacon</title>
+<style type="text/css">
+<!--
+.style2 {font-family: Arial, Helvetica, sans-serif}
+.style4 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.style6 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style7 {font-size: 12px}
+.style11 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic; }
+.style14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	font-style: italic;
+	color: #0000FF;
+}
+.style16 {font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #FFFFFF; }
+.style17 {font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #FFFFFF; }
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style18 {color: #000000}
+.style19 {color: #FFFFFF}
+.style20 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #FFFFFF; }
+.style21 {color: #000066}
+.style23 {font-size: 14px}
+.style24 {
+	text-align: center;
+}
+.style25 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+-->
+</style>
+</head>
+
+<body>
+<p align="center" class="style14">The Programming Languages Beacon<br/>
+  <span class="style23">v16 - March 2016</span></p>
+<p class="style2 style7">This table contains a list of major software products or utilities, with details about the programming languages used to implement them. Information on this is difficult to find, and a few small mistakes might have escaped the <a href="mailto:vincent@lextrait.com">author</a>'s attention. Corrections, suggestions for additions or even references are welcome. The list is not supposed to be exhaustive but the most significant products are  tentatively listed. The order of the products in each family obeys no specific rule, the reader should not understand it as a ranking. <br />
+  The main programming language, the one with which most of new developments are done, is highlighted, while the ones used in older times and still present, or used only for a minority of the developments are indicated too. The pieces of software listed are usually very large, and the list of programming languages cannot be exhaustive. Miscellaneous languages are not mentioned. Sometimes, there are different products under the same line (eg &quot;Games&quot;), or different implementations of a single line (eg JVM implementations). In this case, the overwhelming trend is indicated. Miscellaneous counter examples are ignored.<br />
+  Some readers believe that most of the applications presented are based on old code, and that the technologies in use reflect the trends of the time. As it is an erroneous belief, some introduction dates are mentioned, like <a href="#Chrome">here</a>, or <a href="#facebook">here</a> to show that what is &quot;new&quot; or &quot;old&quot; technology does not necessarily correspond to intuition. <br/><br/>
+
+The difference between C and C++ is a bit artificial, as it is always possible to argue that most of C code is C++ code, or conversely (as more than a few people use C++ more or less like C). The approximation made in this document tries to correspond to intuition. </p>
+<p class="style6"><img src="yellow.jpg" width="15" height="15" /> indicates the major programming language for current evolutions.<br />
+<img src="empty.jpg" width="15" height="15" /> refers to a technology which is present, but is either stable or decreasing.<br />
+<img src="red.jpg" width="15" height="15" /> means that the product has died, and when it died, it used that technology <br />
+  <img src="empty_arrow_right.jpg" width="46" height="15" /> is meant to show an evolution towards the column it points to.<br />
+  <br />
+When the arrow is alone, it means that the amount of code corresponding to the technology in this column is either now null or negligible, having evolved in the direction of the arrow.</p>
+<p class="style6">The readers who might find the content of this page paradoxical will find a tentative explanation of the phenomenons at stake <a href="http://www.mindfacturing.com">here</a>. 
+Read the section entitled "Time will come when computers will be fast enough".<br/><br/>
+
+11,425 visits to this page on the 12th of April 2012 over 24h, record beaten!
+
+</p>
+
+<p class="style6">Release notes:</p>
+<p class="style6">
+5th of March 2016, v16: fixed a lot of entries.<br/>
+17th of September 2015, v14: added NoSQL databases.<br/>
+13th of December 2013, v13: normalized version numbers (now year number). Fixed gcc.<br/>
+25th of January 2013, v11.1: Symbian declared dead.<br/>
+20th of January 2013, v11: updated amazon, added Evernote, LinkedIn, DropBox.<br/>
+21st of April 2012, v10.8: updated the SAP section.<br/>
+14th of April 2012, v10.7: following overwhelming feedback, reverting gcc to C. Also added Java on Android OS, and renamed Open Office.<br/>
+10th of April 2012, v10.6: added a note for C# implementation, with a reference to project Roslyn. Updated also Visual Studio technology to add C#. Thanks Hrvoje.<br/>
+6th of April 2012, v10.5: changed gcc from C to C++, added youtube on Python<br/>
+24th of November 2010, v10.4: fixed Perl line (C and not C++), added termination of Google Wave<br/>
+14th of July 2010, v10.3: added info on iPad OS, iPod Touch OS in addition to iPhone OS. Added info on Eclipse RCP<br/>
+5th of March 2010, v10.2: added PayPal entry<br/>
+8th of February 2010, v10.1: added reference to HipHop in the facebook entry<br/>
+2nd of January 2010, v10.0: added Pike to Opera Mini. Changed release numbering to year.release<br/>
+15th of November 2009, v3.9: added Google Wave, Apple iPhone OS and Amazon Kindle OS entries.<br/>
+15th of August 2009, v3.8: added a <a href="#universal">universal remotes</a> section.<br/>
+9th of July 2009, v3.7: added <a href="#GCOS">Google Chrome OS</a>.<br />
+17th of May 2009, v3.6: update the Lotus Notes entry.<br/>
+11th of May 2009, v3.5: updated the Compilers/Interpreters section (thanks, Northwood).<br/>
+14th of April 2009, v3.4: added <a href="#facebook">facebook</a>.<br />
+1st of April 2009, v3.3: page is now color blind friendly.<br />
+8th of September 2008, v3.2: added <a href="#Chrome">Google Chrome</a>. <br />
+4th of July 2008, v3.0: fixed BlackBerry OS info.<br />
+22nd of November 2007, v2.9: added Google Android. <br />
+21st of October 2007, v2.8: added a mail servers section.
+</p>
+
+<table border="1" cellpadding=" ">
+
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Operating Systems</div>
+    </div></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="center" class="style6">
+      <div align="left" class="style18">Microsoft Windows</div>
+    </div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_empty.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><span class="style7">Some attempts were made to put some C# in Windows Mobile (e.g. the soft keyboard). The result was judged too slow to be incorporated in the final product and was reverted to C++. 
+	<br />
+	The windows kernel is written in C (and compiled as C).<br />
+	The amount of assembler is limited to a few thousand lines.</span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="center" class="style6">
+      <div align="left"><a name="Linux" id="Linux"></a>Linux</div>
+    </div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="center" class="style6">
+      <div align="left"><a href="http://en.wikipedia.org/wiki/Macos">Apple MacOS</a></div>
+    </div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><span class="style6">Objective-C</span></td>
+    <td bgcolor="#E5F2F8"><span class="style6">The first version of user interface of the MacOS was inspired by the <a href="http://en.wikipedia.org/wiki/Xerox_Alto">Xerox Alto</a> user interface which introduced the <a href="http://en.wikipedia.org/wiki/WIMP_%28computing%29">WIMP</a> concept. The user interface was implemented in SmallTalk, and to run it, the hardware was far too expensive for mass market. Early versions of MacOS used Assembler and Pascal.</span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="center" class="style6">
+      <div align="left">Sun Solaris</div>
+    </div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6">HP-UX</span></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a name="GCOS" id="GCOS"></a>Google Chrome OS</span></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2009</span></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><span class="style6">Google Chrome is based on <a href="#Linux">Linux</a> and <a href="#Chrome">Chrome</a><a href="#Linux"></a>.</span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a name="OSv" id="OSv" href="https://en.wikipedia.org/wiki/OSv">OSv</a></span></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2013</span></div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><span class="style6"></span></td>
+  </tr>
+  
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Operating Systems for Mobiles</div>
+    </div></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="center" class="style6">
+      <div align="left"><a href="http://en.wikipedia.org/wiki/iOS">Apple iOS</a></div>
+    </div></td>
+    <td bgcolor="#E5F2F8" class="style24"><span class="style6">2007</span></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><span class="style6">Objective-C</span></td>
+    <td bgcolor="#E5F2F8"><span class="style6">The iPhone, iPod Touch and iPad use a modified version of Mac OS.</span></td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Android_(mobile_phone_platform)">Google Android</a> </div></td>
+	<td bgcolor="#E5F2F8"><div align="center"><span class="style6">2008</span></div></td>
+	<td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><span class="style6">Android is based on <a href="#Linux">Linux</a>, which is coded in C. The user interface is Java. Apps (not covered here) are mostly Java.</span></td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Blackberry_%28PDA%29#Operating_system">RIM BlackBerry OS 4.x </a></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><span class="style6">RIM makes it mandatory for application developers to use Java as a programming language on BlackBerry. People tend to confuse this with the technology used to develop the operating system. The BlackBerry OS itself is developed using C++.</span></td>
+  </tr>
+    <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Amazon_Kindle">Amazon Kindle OS</a> </div></td>
+	<td bgcolor="#E5F2F8"><div align="center"><span class="style6">2007</span></div></td>
+	<td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><span class="style6">The Kindle runs <a href="#Linux">Linux</a>.</span></td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Symbian">Symbian OS</a></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center">
+        <p><img src="blue_red.jpg" width="15" height="15" /><br />
+          <span class="style7"><em>(2013) </em></span></p>
+      </div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><span class="style6">Symbian was still the leading operating system for phones in 2010. 
+	Its market share dropped to 4.4% in Q2 2012. It has been declared dead on January 24, 2013.</span></td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Graphical Layers</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6">Microsoft Windows UI </span></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a href="http://en.wikipedia.org/wiki/Aqua_%28user_interface%29">Apple MacOS UI (Aqua)</a></span></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a href="http://en.wikipedia.org/wiki/GNOME">Gnome</a></span> </td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15"/></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_empty.jpg" width="15" height="15"/></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a href="http://en.wikipedia.org/wiki/Kde">KDE</a></span></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Desktop Search</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a href="http://en.wikipedia.org/wiki/Google_Desktop">Google Desktop Search</a></span> </td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a href="http://en.wikipedia.org/wiki/Windows_Desktop_Search">Microsoft Windows Desktop Search </a></span></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><span class="style6"><a href="http://en.wikipedia.org/wiki/Beagle_%28GNOME%29">Beagle</a></span></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center">
+        <p><img src="blue_red.jpg" width="15" height="15" /><br />
+          <span class="style7"><em>(2009) </em></span></p>
+      </div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+  </tr>
+  
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Office Products</div>
+    </div></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="center" class="style6">
+      <div align="left"><a href="http://en.wikipedia.org/wiki/Microsoft_Office">Microsoft Office</a></div>
+    </div></td>
+    <td></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td><div align="center" class="style4"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Traditionally, MS Office was developed using assembler, then development moved to C, later, when C++ arose, everything new was done using C++. Currently there is no plan to change. A small attempt was made to develop a miscellaneous single panel in C#, a few years back. It is not known if it has been kept. </span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="center" class="style6">
+      <div align="left"><a name="OpenOffice" href="http://en.wikipedia.org/wiki/OpenOffice.org">Apache OpenOffice</a></div>
+    </div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Apache Open Office, acquired in 1999 by Sun Microsystems from Star Division. No attempt has been made by Sun to convert the code into Java. Java is however used for some miscellaneous modules.</span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="center" class="style6">
+      <div align="left"><a href="http://en.wikipedia.org/wiki/LibreOffice">LibreOffice</a></div>
+    </div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td><span class="style6">Python</span></td>
+    <td><span class="style6">This is a fork of <a href="#OpenOffice">OpenOffice</a>. The code is still mainly C++. Some Python added.</span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="center" class="style6">
+        <div align="left"><a href="http://en.wikipedia.org/wiki/WordPerfect_Office">Corel Office/WordPerfect Office</a></div>
+    </div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><span class="style2"></span><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center">
+      <p><img src="blue_empty_arrow_left.jpg" width="46" height="15" /></p>
+      <p class="style6"><em>(August 1997) </em></p>
+    </div></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Corel Office, initially developed in Assembler and C, <a href="http://support.novell.com/techcenter/articles/dnd19970516.html">moved to Corel Office for Java</a>, fully developed in Java for portability in 1996, and <a href="http://sunsite.uakom.sk/sunworldonline/swol-09-1997/swol-09-jibe.html">abandoned in August 1997</a> because it was too slow. The code was later redeveloped using C and C++. </span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Adobe_Systems">Adobe Systems</a> Acrobat Reader/Distiller</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.evernote.com">Evernote</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td><div align="center">
+      <p><img src="blue_empty_arrow_left.jpg" width="46" height="15" /></p>
+      <p class="style6"><em>(October 2010) </em></p>
+    </div></td>
+    <td></td>
+    <td class="style6">Evernote v3.5 was coded in C#. The technology 
+	<a href="http://blog.evernote.com/blog/2010/10/26/evernote-4-for-windows-is-here/">had to be changed</a> to gain speed. The current programming language from v4.0 is C++.</td>
+  </tr>
+
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">RDBMS</div>
+    </div></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6">
+		<a href="http://en.wikipedia.org/wiki/Oracle_database">Oracle database</a></div></td>
+    <td></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center" class="style4"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Only Assembler, C and C++  in the core.</span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="MySQL" href="http://en.wikipedia.org/wiki/Mysql">MySQL</a></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/MariaDB">MariaDB</a></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Perl</span></td>
+    <td><span class="style6">MariaDB is a fork of <a href="#MySQL">MySQL</a>. More than half of the code is C++. The remainder is made of C and <a href="https://en.wikipedia.org/wiki/Perl">Perl</a>.</span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/IBM_DB2">IBM DB2</a></div></td>
+    <td></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Microsoft_SQL_Server">Microsoft SQL Server</a></div></td>
+    <td></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/IBM_Informix">IBM Informix</a></div></td>
+    <td></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">SAP DB/<a href="http://en.wikipedia.org/wiki/MaxDB">MaxDB</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">NoSQL databases, Big data</div>
+    </div></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="GoogleFileSystem"></a><a href="http://en.wikipedia.org/wiki/Google_File_System">Google File System</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6"></span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="Google BigTable" id="Google BigTable"></a><a href="http://en.wikipedia.org/wiki/BigTable">Google BigTable</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6"></span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td bgcolor="#E5F2F8"><span class="style6">Python, Go, Ruby</span></td>
+    <td bgcolor="#E5F2F8"><span class="style7">At Google, all infrastructure is done using C++, and C++ alone. Peripheral functions can be developed using other languages.</span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="Apache Hadoop" id="Apache Hadoop"></a><a href="http://en.wikipedia.org/wiki/Apache_Hadoop">Apache Hadoop</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6"></span></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td bgcolor="#E5F2F8"><span class="style6">Hadoop is inspired from <a href="#GoogleFileSystem">Google File System</a>.</span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="Apache Cassandra" id="Apache Cassandra"></a><a href="http://en.wikipedia.org/wiki/Apache_Cassandra">Apache Cassandra</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6"></span></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="ScyllaDB" id="ScyllaDB"></a><a href="http://www.scylladb.com">ScyllaDB</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2015</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">ScyllaDB is a C++ rewrite of the Java-based <a href="#Apache Cassandra">Apache Cassandra</a>. It claims a <a href="https://adtmag.com/articles/2015/09/23/scylladb-cassandra.aspx">10-fold improvement</a> in performance over Cassandra. This would be at least in part due to the usage of a C++ framework: <a href="http://www.seastar-project.org/">Seastar</a>.</span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="MongoDB" id="MongoDB"></a><a href="http://en.wikipedia.org/wiki/MongoDB">MongoDB</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2009</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="CouchDB" id="CouchDB"></a><a href="http://en.wikipedia.org/wiki/CouchDB">CouchDB</a></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Erlang</span></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="Couchbase Server" id="Couchbase Server"></a><a href="http://en.wikipedia.org/wiki/Couchbase_Server">Couchbase Server</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2015</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td bgcolor="#E5F2F8"><span class="style7">
+	Couchbase source base, initially <a href="#CouchDB">CouchDB</a>, was first <a href="http://en.wikipedia.org/wiki/Erlang_(programming_language)">Erlang</a>-based, like CouchDB. Then some <a href="https://en.wikipedia.org/wiki/Go_(programming_language)">Go</a> was added. In 2012, 2+ man months chasing a very low level race <a href="https://twitter.com/damienkatz/statuses/247816369863798785">bug</a> in Erlang's virtual machine, Erlang was not considered trustable, and C was gradually introduced. In 2013, Damien Katz wrote about his <a href="http://damienkatz.net/2013/01/the_unreasonable_effectiveness_of_c.html">discovery of C's merits</a>. In spite of Katz' criticism of C++, after his departure from Couchbase, the code was actively converted to C++.
+    </span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="LevelDB"></a><a href="http://en.wikipedia.org/wiki/LevelDB">LevelDB</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2011</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td bgcolor="#E5F2F8"><span class="style7">
+	Done by Google.
+    </span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="RocksDB"></a><a href="http://en.wikipedia.org/wiki/RocksDB">RocksDB</a></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2016</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td bgcolor="#E5F2F8"><span class="style7">
+	Fork of <a href="#LevelDB">LevelDB</a> done by Facebook.
+    </span></td>
+  </tr>
+
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Web Browsers</div>
+    </div></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Microsoft_Edge">Microsoft Edge</a> (ex. Internet Explorer)</div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><span class="style6">2014</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="Mozilla" id="Mozilla"></a><a href="http://en.wikipedia.org/wiki/Mozilla_Firefox">Mozilla Firefox</a></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Netscape_Navigator">Netscape Navigator</a></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><span class="style2"></span><img src="blue_yellow.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td><div align="center" class="style6"><em>see <a href="#Mozilla">Mozilla</a></em></div></td>
+    <td><div align="center"><img src="blue_empty_arrow_left.jpg" width="46" height="15" /><img src="blue_red.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">The code of Netscape browser was written in C, and Netscape engineers, all bought to Java (see M. Cusumano <a href="http://www.amazon.com/Competing-Internet-Time-Netscape-Microsoft/dp/0684863456/ref=sr_1_15/102-1612444-9299369?ie=UTF8&amp;s=books&amp;qid=1180001122&amp;sr=8-15">book</a> and <a href="http://portal.acm.org/citation.cfm?id=317678&amp;coll=portal&amp;dl=ACM&amp;CFID=19508034&amp;CFTOKEN=91288010">article</a>) redeveloped the browser using Java. It was too slow and abandoned. Mozilla, the next version, was later developed using C++. </span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="Safari" id="Safari"></a><a href="http://en.wikipedia.org/wiki/Safari_%28web_browser%29">Safari</a></div></td>
+    <td><div align="center"><span class="style6">7-Jan-03</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Browser for Apple Mac OS, its foundation is <a href="http://en.wikipedia.org/wiki/WebKit">WebKit</a>, <a href="http://webkit.org/coding/coding-style.html">a C++ framework</a>. </span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a name="Chrome" id="Chrome"></a><a href="http://en.wikipedia.org/wiki/Google_Chrome">Google Chrome</a></div></td>
+    <td><div align="center"><span class="style6">2-Sept-08</span></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Chrome has been introduced as the combination of 26 different libraries. The base code comes from <a href="http://en.wikipedia.org/wiki/WebKit">WebKit</a> 
+    (C++) which powers Safari as well. 
+    One of its key propositions is the ultra fast <a href="http://en.wikipedia.org/wiki/V8_JavaScript_engine">V8 JavaScript engine</a>, written essentially in C++. </span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/HotJava">Sun HotJava</a> </div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center">
+      <p><img src="blue_red.jpg" width="15" height="15" /><span class="style6"><em><br />
+        (1999)</em></span></p>
+      </div></td>
+    <td></td>
+    <td></td>
+    <td class="style6">HotJava never took off, it was far too slow compared to other browsers. 
+    It became a showcase for the Java applet technology and the product is now frozen since 1999.</td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Opera_%28Internet_suite%29">Opera</a></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Opera_Mini">Opera Mini</a></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td class="style6"><a href="http://pike.ida.liu.se/">Pike</a></td>
+    <td><span class="style6">Opera Mini (2007) has a very funny architecture, and is indeed using C++, Java 
+	and Pike. 
+The browser is <a href="http://dev.opera.com/articles/view/designing-with-opera-mini-in-mind/">split in two parts</a>, 
+an ultra thin (less than 100Kb) "viewer" client part and a server side responsible of rendering. The first  uses Java and receives the page under the OBML format, 
+the latter reuses classical Opera (C++) rendering engine plus Opera's Small Screen Rendering, on the server. 
+	A significant part of the server uses <a href="http://pike.ida.liu.se/">Pike</a>. This original architecture allows Opera to penetrate various J2ME-enabled portable
+devices, such as phones, while preserving excellent response time. This comes obviously with a few sacrifices, for instance on JavaScript execution.</span></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6"><a href="http://en.wikipedia.org/wiki/Mosaic_%28browser%29">Mosaic</a></div></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_red.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Mosaic was the first widely spread browser, it morphed into Netscape.</span> </td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Mail Clients </div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6">
+		<a href="http://en.wikipedia.org/wiki/Microsoft_outlook">Microsoft Outlook</a></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><div align="left" class="style6">
+		<a href="http://en.wikipedia.org/wiki/IBM_Lotus_Notes">IBM Lotus Notes</a> </div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Development Environments</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="msdn.microsoft.com/vstudio/">Microsoft Visual Studio</a> </span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></td>
+    <td></td>
+    <td class="style6">Visual Studio 2010 was still mostly native code, but for the UI presentation it 
+    <a href="http://blogs.msdn.com/b/visualstudio/archive/2010/02/16/wpf-in-visual-studio-2010-part-1.aspx">adopted the managed WPF framework</a>. This holds true for later versions.
+    plug-ins are also using more and more C#.</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Eclipse_%28software%29">Eclipse</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /><br />
+      <span class="style11">(see notes)</span></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="style6"><a name="Eclipse" id="Eclipse"></a>To build 
+	Eclipse, a specific graphical toolkit was developed, SWT to replace Java classical AWT 
+	or Swing (considered too slow). SWT is a thin Java layer on top of native C/C++ code. 
+	SWT is now part of Eclipse RCP.</td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Virtual Machines</div>
+    </div></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Common_Language_Runtime">Microsoft .Net CLR</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center" class="style4"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Java_virtual_machine">Java Virtual Machine (JVM)</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">ERP</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td class="style6"><a href="http://en.wikipedia.org/wiki/SAP_ERP">SAP ERP</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><span class="style6"><img src="blue_yellow.jpg" width="15" height="15" /><br />
+    ABAP</span></div></td>
+    <td class="style6">SAP ERP is programmed in ABAP, which generates C code. The SAP kernel is itself coded using C and C++.</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Peoplesoft">Oracle Peoplesoft</a> </span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td><div align="center" class="style6"><img src="blue_yellow.jpg" width="15" height="15" /><br />
+        <a href="http://en.wikipedia.org/wiki/PeopleCode">PeopleCode</a> </div></td>
+    <td><span class="style6">Peoplesoft relied on BEA Tuxedo and C++ code, now moving to Oracle WebLogic and Java, keeping the PeopleCode language. The C++ code is apparently not reengineered. </span></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Oracle_E-Business_Suite">Oracle E-Business Suite </a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Business Intelligence </div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Business_Objects_(company)">Business Objects</a> </span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Graphics Editors</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">
+	<a href="http://en.wikipedia.org/wiki/Adobe_Photoshop">Adobe Photoshop</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Gimp">The GIMP </a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">Some Perl </span></td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Search Engines</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.google.com">Google</a></span></td>
+    <td>&nbsp;</td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Web Sites</div>
+    </div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td bordercolor="#999999" bgcolor="#E5F2F8"><span class="style6"><a href="http://www.ebay.com">eBay</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center">
+    <span class="style11">(2002)</span>&nbsp;<img src="blue_empty_arrow_right.jpg" width="46" height="15" /></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">Information on eBay architecture and the move from C++ to Java can be found <a href="http://www.addsimplicity.com/downloads/eBaySDForum2006-11-29.pdf">here</a>.</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.paypal.com">PayPal</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.amazon.com">Amazon</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><span class="style2"><img src="blue_yellow.jpg" width="15" height="15" />&nbsp;</span></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">Amazon initially using C++ extensively is now using 
+	an increasing amount of Java.</span></td>
+  </tr>
+  
+<tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a name="facebook" id="facebook"></a><a href="http://www.facebook.com">facebook</a></span></td>
+    <td><div align="center"><span class="style6">26-Sep-2006</span></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><span class="style6"><img src="blue_yellow.jpg" width="15" height="15" /><br />
+    PHP</span></div></td>
+    <td><span class="style6">This line is only about facebook, not its plugins. Plugins can be developed in many different technologies, thanks to facebook's ORB/application server, <a href="http://en.wikipedia.org/wiki/Thrift_(protocol)">Thrift</a>. Thrift contains a compiler coded in C++. facebook people <a href="http://incubator.apache.org/thrift/static/thrift-20070401.pdf">write</a> about Thrift: "The multi-language code generation is 
+well suited for search because it allows for application development 
+in an efficient server side language (C++) and allows the Facebook 
+PHP-based web application to make calls to the search service 
+using Thrift PHP libraries." Aside the use of C++, facebook has adopted a <a href="http://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> architecture.<br />
+	In 2009 and 2010, facebook developers have
+	<a href="http://www.theregister.co.uk/2010/02/02/facebook_hiphop_unveiled/">
+	made a shift</a> towards C++ with HipHop, a PHP to C++ translator which 
+	allows to reduce by 50% the hardware needed to operate the site.</span></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.youtube.com">YouTube</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">Python, proprietary JavaScript</span></td>
+    <td><span class="style6">In case of doubt, just have a look
+	<a href="http://www.gooli.org/blog/youtube-runs-on-python/">
+	here</a>. YouTube is i/o bound, so the technology business logic is made of is probably a bit irrelevant.</span></td>
+  </tr>
+  
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.linkedin.com">LinkedIn</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><span class="style2"><img src="blue_yellow.jpg" width="15" height="15" />&nbsp;</span></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+<tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.dropbox.com">DropBox</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">Python, Go</span></td>
+    <td><span class="style6">For details, have a look
+	<a href="http://highscalability.com/blog/2011/3/14/6-lessons-from-dropbox-one-million-files-saved-every-15-minu.html">
+	here</a>.</span></td>
+  </tr>
+
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td bgcolor="#3399CC"; class="style16"><span class="style21"><strong>Games</strong></span></td>
+    <td></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="style6">A lot of games on smart phones are developed using Java. 
+	This entry refers to &quot;full service&quot; disk based games.</td>
+  </tr>
+
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Compilers/Interpreters</div>
+    </div></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">Microsoft Visual C++ </span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+<tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">Microsoft Visual Basic </span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+<tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">Microsoft Visual C# </span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="style6">It is worth noting that Microsoft is running a project called <a href="http://en.wikipedia.org/wiki/Microsoft_Roslyn">Roslyn</a> 
+    which contains a <a href="http://blogs.msdn.com/b/ericlippert/archive/2011/10/19/the-roslyn-preview-is-now-available.aspx">C# compiler written in C#</a>.</td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">gcc (GNU Compiler Collection)</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Clang">Clang/LLVM</a> compiler suite</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">javac (Sun Java compiler)</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td class="style6"><a href="http://en.wikipedia.org/wiki/Perl_language">Perl</a></td>
+    <td></td>
+    <td></td>
+    <td><div align="center" class="style2"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    
+<!-- Entry -->
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Php">PHP</a></span></td>
+    <td></td>
+    <td></td>
+    <td><div align="center" class="style2"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="style6">It must be noted that PHP is a script running a lot of 
+	imported libraries, themselves either programmed in C or C++.</td>
+  </tr>
+  
+<!-- Languages banner -->
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+<!-- Section banner -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">3D Engines</div>
+    </div></td>
+  </tr>
+  
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">Microsoft DirectX</span> </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15"/></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">OpenGL</span></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15"/></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><a href="http://en.wikipedia.org/wiki/OGRE3D" class="style6">OGRE 3D</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15"/></div></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Web Servers</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">Apache</span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center" class="style4"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td><div align="center" class="style2"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">Microsoft IIS </span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center" class="style4"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Mail Servers</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><a href="http://en.wikipedia.org/wiki/Microsoft_Exchange_Server" class="style6">Microsoft Exchange Server</a></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_empty.jpg" width="15" height="15" /><img src="blue_empty_arrow_right.jpg" width="46" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+	<tr bordercolor="#999999" bgcolor="#E5F2F8">
+	<td><a href="http://en.wikipedia.org/wiki/Postfix_%28software%29" class="style6">Postfix</a></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+
+	<tr bordercolor="#999999" bgcolor="#E5F2F8">
+	<td><span class="style6"><a href="http://en.wikipedia.org/wiki/hMailServer" class="style6">hMailServer</a></span></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_empty.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td>&nbsp;</td>
+	</tr>
+	
+	<tr bordercolor="#999999" bgcolor="#E5F2F8">
+	<td><a href="http://en.wikipedia.org/wiki/Apache_James" class="style6">Apache James</a></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td><span class="style6">Apaches James has not evolved as a stable release since 2009.</span></td>
+	</tr>
+	
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Web 2.0</div>
+    </div></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/MediaWiki">MediaWiki</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">PHP</span></td>
+    <td><span class="style6">Powers <a href="http://en.wikipedia.org">Wikipedia</a> </span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://twiki.org/">TWiki</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Perl</span></td>
+    <td></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><a href="http://en.wikipedia.org/wiki/Blogger_%28service%29"><span class="style6">Google Blogger</span></a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">Python</span></td>
+    <td><span class="style6">The software has been re-engineered several times, for instance in 2002 and 2006.</span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><a href="http://en.wikipedia.org/wiki/Google_Wave" class="style6">Google Wave</a></td>
+    <td bgcolor="#E5F2F8" class="style25">2009</td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+	<td><div align="center">
+        <p><img src="blue_red.jpg" width="15" height="15" /><br />
+          <span class="style7"><em>(August 2010) </em></span></p>
+      </div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td><span class="style6">Google Wave user interface used <a href="http://en.wikipedia.org/wiki/Google_Web_Toolkit">Google Web Toolkit.</a> which allowed
+    to program the UI using Java and generate JavaScript code. The server
+	<a href="http://googlewavedev.blogspot.com/2009/07/google-wave-federation-protocol-and.html">
+	used</a> Java too.</span></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Flickr#Software_architecture">Flickr</a></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><span class="style6">PHP</span></td>
+    <td></td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Digital audio editors</div>
+    </div></td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="center" class="style6">
+      <div align="left"><a href="http://en.wikipedia.org/wiki/Audacity_(audio_editor)">Audacity</a></div>
+    </div></td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8">&nbsp;</td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">CD/DVD Authoring</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Nero_burning_rom">Nero Burning ROM </a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><a href="http://en.wikipedia.org/wiki/K3b"><span class="style6">K3B</span></a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Multimedia Players</div>
+    </div></td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td bgcolor="#E5F2F8"><div align="center" class="style6">
+      <div align="left"><a href="http://en.wikipedia.org/wiki/VLC_media_player">VLC</a></div>
+    </div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"></td>
+    <td bgcolor="#E5F2F8"><span class="style6">Objective-C, Lua</span></td>
+    <td bgcolor="#E5F2F8"></td>
+  </tr>
+  
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.nullsoft.com">Nullsoft</a> <a href="http://www.winamp.com/">Winamp</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Windows_media_player">Microsoft Windows Media Player </a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Ipod#Software">Apple iPod software </a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center" class="style4"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">Peer to Peer</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Emule">eMule</a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td class="style6"><a href="http://en.wikipedia.org/wiki/Mutorrent">&micro;torrent</a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/Vuze" class="style6">Vuze</a> (previously Azureus)</span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">Vuze is built on top of SWT, see <a href="#Eclipse">notes corresponding to Eclipse</a>. </span></td>
+  </tr>
+  
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21">GPS Systems</div>
+    </div></td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">TomTom</span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://en.wikipedia.org/wiki/The_Hertz_Corporation#Hertz_Neverlost">Hertz NeverLost </a></span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6">Garmin</span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><img src="blue_yellow.jpg" width="15" height="15" /></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td><span class="style6"><a href="http://www.motorola.com/content.jsp?globalObjectId=5413-8085">Motorola VIAMOTO</a> </span></td>
+    <td><div align="center"><span class="style6">2003</span></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center">
+        <p><img src="blue_red.jpg" width="15" height="15" /><br />
+          <span class="style7"><em>(June 2007) </em></span></p>
+      </div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><span class="style6">Motorola VIAMOTO was a smart phone &quot;connected&quot; GPS implementation, with a Java client-side. It was re-branded by a number of car rental companies. 
+    For instance, Avis Assist was another name for the Motorola VIAMOTO product. Avis have withdrawn this product and are now offering Garmin in the USA and TomTom in Europe. 
+    Motorola withdrew the product in June 2007. Alamo/National who had re-branded the system &quot;Navigation Station&quot; will also discontinue the service.</span></td>
+  </tr>
+
+  <tr bordercolor="#999999">
+    <td width="20%" bgcolor="#0B71A4"><div align="center" class="style17">Family/Product</div></td>
+    <td width="10%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>Date</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>ASM</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style2"><strong>C++</strong></span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Java</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">C#</span></div></td>
+    <td width="8%" bgcolor="#0B71A4"><div align="center" class="style19"><span class="style4">Others</span></div></td>
+    <td width="22%" bgcolor="#0B71A4"><div align="center" class="style20">Notes</div></td>
+  </tr>
+  
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td colspan="9" bgcolor="#3399CC"><div align="center" class="style16">
+      <div align="left" class="style21"><a name="universal" id="universal"></a>Universal remotes</div>
+    </div></td>
+  </tr>
+
+<!-- Entry -->
+  <tr bordercolor="#999999" bgcolor="#E5F2F8">
+    <td class="style6">Logitech Harmony 1000/1100</td>
+    <td bgcolor="#E5F2F8" class="style25">2009</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><div align="center">
+        <p><img src="blue_red.jpg" width="15" height="15" /><br />
+          <span class="style7"><em>(2009) </em></span></p>
+      </div></td>
+    <td></td>
+    <td><div align="center"><span class="style6"><img src="blue_yellow.jpg" width="15" height="15" /><br />
+    <a href="http://en.wikipedia.org/wiki/Adobe_Flash">
+	Flash</a></span></div></td>
+    <td class="style6">The UI of the Harmony 1100 is now Flash based vs the Java UI found in the Harmony 1000.</td>
+  </tr>
+
+</table>
+
+<p class="style6">This page is maintained by Vincent Lextrait (e-mail <a href="mailto:vincent@lextrait.com">vincent@lextrait.com</a>) </p>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-946635-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
+
