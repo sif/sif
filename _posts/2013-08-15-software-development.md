@@ -74,6 +74,8 @@ Consider use cases
 
 ### Agile
 
+("Study finds 268% higher failure rates for Agile software projects")[https://www.theregister.com/2024/06/05/agile_failure_rates/]
+
 Incremental methods used in software development
 
 https://twitter.com/AgileRamsay

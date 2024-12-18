@@ -17,6 +17,7 @@ Autonomous Identity
 Compliance to:
 
   * GDPR
+  * PCI DSS 4.0
   * 
 
 

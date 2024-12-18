@@ -8,6 +8,10 @@ tags: cloud
 * TOC
 {:toc}
 
+LogicMonitor
+
+VMware Tanzu
+
 To attain resilience:
 
 Predict

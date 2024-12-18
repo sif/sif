@@ -29,6 +29,10 @@ Types of social engineers/insider threats:
 
 
 
+Don't reply to scammers, they are trying to get the number warmed up so that they can spam texts with URLs
+
+
+
 ## Scammers
 
 

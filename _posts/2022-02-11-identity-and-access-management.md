@@ -12,6 +12,10 @@ tags: cybersecurity WAM 1Kosmo SSI DID
 
 
 
+UUID
+
+
+
 Role
 A label for a set of related responsibilities
 
