@@ -15,6 +15,8 @@ tags: AI ML GAN
 
 https://github.com/terryum/awesome-deep-learning-papers
 
+Adidas apparently did a commercial entirely in AI
+
 narrow AI, what we currently have altogether as of 2024
 
 categories based on human interactions

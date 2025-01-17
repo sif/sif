@@ -16,6 +16,10 @@ Deaf culture
 
 ## Personal stories and experiences of individuals
 
+https://www.youtube.com/@blindkill1991
+
+https://www.youtube.com/@L1zHarris
+
 "AMaA about being a deaf-blind corporate woman!"
 "When I was 7, my mom came into my room while I was playing with dolls. She played with me for awhile and then said my name. I looked at her.
 
